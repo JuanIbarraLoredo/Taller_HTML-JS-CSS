@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero de Exploración Espacial</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Misiones Espaciales</h2>
+    <ol> <!-- Cambié de ul a ol -->
+      <li>Próximas Misiones</li>
+      <li>Avances Tecnológicos</li>
+      <li>Hitos Espaciales</li>
+      <li>Eventos Espaciales</li> <!-- Nuevo -->
+      <li>Investigación Científica</li> <!-- Nuevo -->
+      <li>Noticias Recientes</li> <!-- Nuevo -->
+    </ol>
+    <button class="new-mission">Nueva Misión</button>
+    <button class="new-technology">Nueva Tecnología</button>
+    <button class="new-milestone">Nuevo Hito</button>
+    <button class="new-event">Nuevo Evento</button> <!-- Nuevo -->
+    <button class="new-research">Nueva Investigación</button> <!-- Nuevo -->
+    <button class="new-news">Nueva Noticia</button> <!-- Nuevo -->
+  </aside>
+
+  <div class="main">
+    <header>
+      <h1>Exploración Más Allá de la Tierra</h1>
+    </header>
+
+    <div class="board">
+
+      <!-- Hitos Espaciales -->
+      <div class="column">
+        <h3><span class="dot yellow"></span>Hitos Espaciales</h3>
+        <div class="note">
+          <p><strong>Primer Humano en Marte:</strong> SpaceX tiene como objetivo enviar la primera misión humana a Marte.</p>
+        </div>
+        <div class="note">
+          <p><strong>Base Lunar:</strong> Establecer una base permanente en la Luna es un objetivo futuro para la investigación científica.</p>
+        </div>
+        <button class="add-note">Agregar Hito</button>
+      </div>
+
+      <!-- Avances Tecnológicos -->
+      <div class="column">
+        <h3><span class="dot purple"></span>Avances Tecnológicos</h3>
+        <div class="note">
+          <p><strong>IA para la Exploración Espacial:</strong> Uso de la inteligencia artificial para analizar grandes volúmenes de datos de misiones espaciales.</p>
+        </div>
+        <div class="note">
+          <p><strong>Cohetes Reutilizables:</strong> SpaceX ha revolucionado los viajes espaciales con su tecnología de cohetes reutilizables.</p>
+        </div>
+        <button class="add-note">Agregar Tecnología</button>
+      </div>
+
+      <!-- Descubrimientos Recientes -->
+      <div class="column">
+        <h3><span class="dot teal"></span>Descubrimientos Recientes</h3>
+        <div class="note">
+          <p><strong>Agujeros Negros:</strong> La primera imagen de un agujero negro tomada por el Telescopio del Horizonte de Eventos.</p>
+        </div>
+        <div class="note">
+          <p><strong>Exoplanetas:</strong> Se han descubierto miles de planetas fuera de nuestro sistema solar, algunos potencialmente habitables.</p>
+        </div>
+        <button class="add-note">Agregar Descubrimiento</button>
+      </div>
+
+      <!-- Nuevas categorías -->
+
+      <!-- Eventos Espaciales -->
+      <div class="column">
+        <h3><span class="dot blue"></span>Eventos Espaciales</h3>
+        <div class="note">
+          <p><strong>Lanzamiento de Artemis I:</strong> El próximo lanzamiento de la misión Artemis I para llevar humanos a la Luna.</p>
+        </div>
+        <div class="note">
+          <p><strong>Aniversario del Alunizaje Apolo 11:</strong> Celebración del 55° aniversario del alunizaje histórico de la misión Apolo 11.</p>
+        </div>
+        <button class="add-note">Agregar Evento</button>

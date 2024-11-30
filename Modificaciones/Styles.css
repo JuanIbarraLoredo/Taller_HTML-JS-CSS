@@ -1,0 +1,217 @@
+/* Variables */
+:root {
+    --color-white: #ffffff;
+    --color-gray-light: #f9f9f9;
+    --color-gray-dark: #d9d9d9;
+    --color-black: #000000;
+    --color-purple-light: #b39ddb; /* Morado suave */
+    --color-purple-medium: #8e44ad; /* Morado medio */
+    --color-purple-dark: #6a1b9a; /* Morado oscuro */
+    --color-red: #e74c3c;
+    --shadow-default: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --radius-default: 8px;
+    --font-primary: 'Anaheim', Arial, sans-serif;
+    --font-secondary: 'Verdana', sans-serif;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: var(--font-primary);
+    background-color: var(--color-gray-light);
+    color: var(--color-black);
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100vh;
+    width: 300px;
+    background-color: var(--color-white);
+    padding: 20px;
+    box-shadow: var(--shadow-default);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-family: var(--font-secondary);
+    color: var(--color-purple-medium);
+}
+
+.sidebar ol { 
+    list-style: decimal;
+    margin-bottom: 20px;
+}
+
+.sidebar ol li {
+    margin-bottom: 10px;
+    font-family: var(--font-secondary);
+    color: var(--color-purple-light);
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: var(--radius-default);
+    background-color: var(--color-purple-light);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    box-shadow: var(--shadow-default);
+}
+
+.sidebar button:hover {
+    background-color: var(--color-purple-medium);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Personalización de botones */
+.new-mission, .new-technology, .new-milestone, .new-event, .new-research, .new-news {
+    background-color: var(--color-purple-medium);
+}
+
+.new-mission:hover, .new-technology:hover, .new-milestone:hover, .new-event:hover, .new-research:hover, .new-news:hover {
+    background-color: var(--color-purple-dark);
+}
+
+/* Main Content */
+.main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Board Styles */
+.board {
+    display: flex;
+    gap: 20px;
+}
+
+.note {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--color-gray-dark);
+    border-radius: var(--radius-default);
+    background-color: var(--color-gray-light);
+    color: var(--color-black);
+    box-shadow: var(--shadow-default);
+    transition: transform 0.2s ease-in-out;
+}
+
+.note:hover {
+    transform: scale(1.05);
+}
+
+.column {
+    background-color: var(--color-white);
+    border-radius: var(--radius-default);
+    box-shadow: var(--shadow-default);
+    padding: 20px;
+    width: 100%;
+}
+
+.column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-secondary);
+    color: var(--color-purple-medium);
+}
+
+.column .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dot.blue {
+    background-color: var(--color-purple-medium);
+}
+
+.dot.yellow {
+    background-color: var(--color-purple-light);
+}
+
+.dot.green {
+    background-color: var(--color-purple-dark);
+}
+
+.dot.black {
+    background-color: var(--color-black);
+}
+
+.column ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--color-gray-dark);
+    border-radius: var(--radius-default);
+    background-color: var(--color-gray-light);
+    transition: transform 0.2s ease;
+}
+
+.column ul li:hover {
+    transform: scale(1.05);
+}
+
+.column button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: var(--radius-default);
+    background-color: var(--color-purple-light);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.column button:hover {
+    background-color: var(--color-purple-medium);
+}
+
+/* Nueva sección About */
+#about {
+    margin-top: 40px;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: var(--radius-default);
+    box-shadow: var(--shadow-default);
+}
+
+#about h2 {
+    font-family: var(--font-secondary);
+    color: var(--color-purple-medium);
+}
+
+#about p {
+    font-family: var(--font-secondary);
+    color: var(--color-gray-dark);
+    font-size: 1rem;
+}
+
+/* Estilos para la imagen en las notas */
+.note-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+/* Estilo para el hover de enlaces */
+a:hover {
+    color: var(--color-purple-medium);
+    text-decoration: underline;
+}
